@@ -1,0 +1,144 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="./checkout.css">
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+	<script src="./checkout.js"></script>
+</head>
+
+<div class="tabs">
+	<input type="radio" id="tab-1" name="tabs">
+	<label for="tab-1">Products</label>
+	<input type="radio" id="tab-2" name="tabs" checked>
+	<label for="tab-2">Services</label>
+	<div class="tab products">
+		<div class="item-container" id="item-1">
+			<div class="item-title cart-t" title="Title attribute will match content later.">Short Title</div>
+			<div class="item-image"></div>
+			<div class="item-controls">
+				<input class="item-add toggle-click" type="button" value="Add">
+				<div class="item-quantity-container toggle-show">
+					<label>Qty</label>
+					<input class="item-quantity cart-q" type="number" value="1" min="1">
+					<input class="item-save to-cart" type="button" value="Save">
+				</div>
+				<div class="item-price cart-p">1.99</div>
+			</div>
+		</div>
+		<div class="item-container" id="item-2">
+			<div class="item-title cart-t" title="Title attribute will match content later.">Medium Length Title</div>
+			<div class="item-image"></div>
+			<div class="item-controls">
+				<input class="item-add toggle-click" type="button" value="Add">
+				<div class="item-quantity-container toggle-show">
+					<label>Qty</label>
+					<input class="item-quantity cart-q" type="number" value="1" min="1">
+					<input class="item-save to-cart" type="button" value="Save">
+				</div>
+				<div class="item-price cart-p">4.99</div>
+			</div>
+		</div>
+		<div class="item-container" id="item-3">
+			<div class="item-title cart-t" title="Title attribute will match content later.">Long Title That Is Way Too Long For Testing</div>
+			<div class="item-image"></div>
+			<div class="item-controls">
+				<input class="item-add toggle-click" type="button" value="Add">
+				<div class="item-quantity-container toggle-show">
+					<label>Qty</label>
+					<input class="item-quantity cart-q" type="number" value="1" min="1">
+					<input class="item-save to-cart" type="button" value="Save">
+				</div>
+				<div class="item-price cart-p">12.99</div>
+			</div>
+		</div>
+		<div class="item-container" id="item-4">
+			<div class="item-title cart-t" title="Title attribute will match content later.">Wwwwnospacetitlefortestinghhhhh</div>
+			<div class="item-image"></div>
+			<div class="item-controls">
+				<input class="item-add toggle-click" type="button" value="Add">
+				<div class="item-quantity-container toggle-show">
+					<label>Qty</label>
+					<input class="item-quantity cart-q" type="number" value="1" min="1">
+					<input class="item-save to-cart" type="button" value="Save">
+				</div>
+				<div class="item-price cart-p">3.99</div>
+			</div>
+		</div>
+	</div>
+	<div class="tab services">
+		<div class="carousel-container">
+			<div class="slideshow-container">
+				<div class="slide-container fade">
+					<div class="slide slide-1"></div>
+					<div class="text">Caption Text</div>
+				</div>
+				<div class="slide-container fade">
+					<div class="slide slide-2"></div>
+					<div class="text">Caption Two</div>
+				</div>
+				<div class="slide-container fade">
+					<div class="slide slide-3"></div>
+					<div class="text">Caption Three</div>
+				</div>
+				<a class="nav prev">❮</a>
+				<a class="nav next">❯</a>
+			</div>
+			<div class="dot-container" style="text-align:center">
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+		</div>
+		<div class="services-container">
+			<div class="services-selection">
+				<select class="services-selector">
+					<option value="" selected disabled hidden>Select a service</option>
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+					<option value="mercedes">Mercedes</option>
+					<option value="audi">Audi</option>
+				</select>
+				<div class="services-quantity-container">
+					<label>Quantity</label>
+					<input class="services-quantity cart-q" type="number" value="0" min="1">
+					<input class="services-add to-cart" type="button" value="Add" disabled="disabled">
+				</div>
+				<input type="hidden" class="cart-p" value="29.99">
+			</div>
+			<div class="services-description">asd</div>
+			<input type="hidden" class="cart-t" value="">
+		</div>
+	</div>
+</div>
+
+
+<div class="checkout-footer">
+	<div class="cart-container">
+		<div class="cart-display toggle-show">
+			<div class="cart-scroll">
+				<table class="cart cart-visible">
+					<tr class="cart-header">
+						<th class="cart-delete">✖</th>
+						<th class="cart-quantity">Qty</th>
+						<th class="cart-title">Item</th>
+						<th class="cart-price">Price</th>
+					</tr>
+				</table>
+			</div>
+			<div class="cart-total">0.00</div>
+		</div>
+		<input type="button" class="cart-button toggle-click" value="View Cart">
+	</div>
+	<form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input type="hidden" name="cmd" value="_cart">
+		<input type="hidden" name="upload" value="1">
+		<input type="hidden" name="business" value="vowywowy-facilitator@gmail.com">
+		<!--<input type="hidden" name="item_name_1" value="Item Name 1">
+		<input type="hidden" name="amount_1" value="1.00">
+		<input type="hidden" name="shipping_1" value="1.75">
+		<input type="hidden" name="item_name_2" value="Item Name 2">
+		<input type="hidden" name="amount_2" value="2.00">
+		<input type="hidden" name="shipping_2" value="2.50">-->
+		<input type="submit" value="Checkout With PayPal">
+	</form>
+</div>
