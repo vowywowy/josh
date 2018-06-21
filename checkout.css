@@ -167,87 +167,14 @@ input[type=submit]:disabled{
 	cursor: auto;
 }
 
-.carousel-container{
+.services-image{
 	width: 100%;
-}
-
-.slideshow-container {
-  position: relative;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.slide{
 	height: 300px;
 	background-repeat: no-repeat;
 	background-size: cover,contain;
 	background-position: center;
-}
-
-.nav {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	padding: 16px;
-	color: #fff;
-	font-weight: bold;
-	font-size: 16px;
-	transition: 0.6s ease;
-	border-radius: 0 2px 2px 0;
-	background-color: rgba(0,0,0,0.2);
-	user-select: none;
-}
-
-.next {
-	right: 0;
-	border-radius: 2px 0 0 2px;
-}
-
-.nav:hover {
-	background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-	color: #fff;
-	padding: 8px 16px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	background: rgba(0,0,0,0.4);
-	border-radius: 2px 2px 0 0;
-	text-align: center;
-}
-
-.dot-container{
-	text-align: center;
-	margin-top: 16px;
-}
-
-.dot {
-	cursor: pointer;
-	height: 16px;
-	width: 16px;
-	margin: 0 4px;
-	background-color: #eee;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-	background-color: #aaa;
-}
-
-.fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+	background-image: url('item3.png');
+	border-radius: 2px;
 }
 
 .services-container{
@@ -295,6 +222,15 @@ input[type=submit]:disabled{
 	margin-top: 16px;
 	padding: 8px;
 	border-radius: 2px;
+}
+
+.description-price{
+	font-weight: bold;
+	color: #2072ab;
+}
+
+.description-price::before{
+	content: ' - $';
 }
 
 .cart-container{
@@ -426,7 +362,7 @@ td.cart-delete{
 }
 
 
-#item-1 .item-image{
+/*#item-1 .item-image{
 	background-image: url('item.png');
 }
 #item-2 .item-image{

@@ -1,0 +1,50 @@
+{
+	"products": [
+		{
+			"title": "Short Title",
+			"image": "item.png",
+			"price": "4.99"
+		},
+		{
+			"title": "Medium Length Title",
+			"image": "item2.png",
+			"price": "12.99"
+		},
+		{
+			"title": "Long Title That Is Way Too Long For Testing",
+			"image": "item3.png",
+			"price": "3.99"
+		},
+		{
+			"title": "Wwwwnospacetitlefortestinghhhhh",
+			"image": "item4.png",
+			"price": "1.99"
+		}
+	],
+	"services": [
+		{
+			"title": "Service Title",
+			"image": "item.png",
+			"description": "A description for a service",
+			"price": "9.99"
+		},
+		{
+			"title": "Service Title 2",
+			"image": "item2.png",
+			"description": "Another description for a service",
+			"price": "329.99"
+		},
+		{
+			"title": "Service Title 3",
+			"image": "item3.png",
+			"description": "A 3rd description for a service",
+			"price": "129.99"
+		},
+		{
+			"title": "Service Title 4",
+			"image": "item4.png",
+			"description": "asddddddddddddddddddddddddddddddddddddddd",
+			"price": "69.99"
+		}
+	]
+}
